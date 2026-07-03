@@ -9,7 +9,9 @@ export function Header({ darkMode, toggleTheme, onRefresh, loading }) {
         <Typography variant="h6" sx={{ flexGrow: 1, fontWeight: 600 }}>
           User Dashboard
         </Typography>
-        <Switch checked={darkMode} onChange={toggleTheme} icon={<LightMode />} checkedIcon={<DarkMode />} />
+        <IconButton onClick={toggleTheme} color="inherit">
+         {darkMode ? <LightMode /> : <DarkMode />}
+        </IconButton>
         <Tooltip title="Refresh">
           <IconButton color="inherit" onClick={onRefresh} disabled={loading}>
             <RefreshIcon />
