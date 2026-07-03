@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppBar, Toolbar, Typography, IconButton, Switch, Tooltip } from '@mui/material';
+import { AppBar, Toolbar, Typography, IconButton, Tooltip } from '@mui/material';
 import { Refresh as RefreshIcon, LightMode, DarkMode } from '@mui/icons-material';
 
 export function Header({ darkMode, toggleTheme, onRefresh, loading }) {
